@@ -1,0 +1,93 @@
+div#app {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+
+    /*  메뉴  */
+    >div.menu {
+        margin-top: 10px;
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 1px solid #454545;
+        padding: 5px;
+
+        display: inline-flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+
+        >div {
+            padding: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        >div[data-selected=true] {
+            background: #454545;
+            color: white;
+        }
+    }
+
+    /*  입력 폼  */
+    >form {
+        margin-top: 30px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        /*  비트 선택  */
+        select#bit-select {
+            outline: none;
+            padding: 5px;
+            font-size: 15.5px;
+            cursor: pointer;
+        }
+
+        /*  제출 버튼  */
+        button#submit-btn {
+            margin-top: 10px;
+            background: #454545;
+            color: white;
+        }
+    }
+
+    input[type="text"] {
+        border: 1px solid #454545;
+        padding: 5px;
+    }
+
+    textarea {
+        height: 150px;
+        border: 1px solid #454545;
+        resize: none;
+        padding: 10px;
+    }
+
+    /*  결과  */
+    div.result {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;   
+
+        >div.error {
+            padding: 10px;
+            background: rgb(231, 83, 83);
+            color: white;
+            width: 100%;
+        }
+    }
+}

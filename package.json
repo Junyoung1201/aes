@@ -1,0 +1,38 @@
+{
+  "name": "aes-web",
+  "author": {
+    "name": "이준영",
+    "url": "https://github.com/Junyoung1201"
+  },
+  "version": "1.0.0",
+  "homepage": ".",
+  "scripts": {
+    "start": "cross-env BROWSER=none react-scripts start",
+    "build": "react-scripts build"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/react": "^19.0.8",
+    "@types/react-dom": "^19.0.3",
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.9",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}

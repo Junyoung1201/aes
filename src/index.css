@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+}
+
+* {
+    font-size: 17px;
+    box-sizing: border-box;
+    font-family: Pretendard;
+}
+
+label {
+    font-size: 16px;
+}
+
+button {
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button,input,textarea {
+    border: 0;
+    outline: none;
+}

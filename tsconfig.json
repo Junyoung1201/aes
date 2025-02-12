@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "jsx": "react-jsx",
+        "allowSyntheticDefaultImports": true,
+        "target": "ES2021",
+        "module": "CommonJS",
+        "baseUrl": "./src",
+        "paths": {
+            "utils/*": ["utils/*"],
+            "components/*": ["components/*"]
+        },
+        "outDir": "public"
+    },
+    "typeRoots": [
+        "node_modules/@types"
+    ],
+}

@@ -12,8 +12,6 @@ export default function App() {
     const keyInputRef = useRef<HTMLInputElement>(null);
     const ivInputRef = useRef<HTMLInputElement>(null);
     const outputInputRef = useRef<HTMLTextAreaElement>(null);
-    
-    const DEBUG = true;
 
     useEffect(() => {
         function clearError(e: globalThis.KeyboardEvent) {
@@ -157,7 +155,7 @@ export default function App() {
                     <label htmlFor="text-input">
                         { encrypt ? "암호화할 텍스트" : "복호화할 텍스트" }
                     </label>
-                    <textarea id="text-input" ref={textInputRef} required defaultValue={DEBUG && "테스트 텍스트"}></textarea>
+                    <textarea id="text-input" ref={textInputRef} required></textarea>
                 </div>
 
                 <div>
@@ -176,7 +174,6 @@ export default function App() {
                         placeholder={keyLength+"자의 키 문자열을 입력해주세요."}
                         minLength={keyLength}
                         maxLength={keyLength}
-                        defaultValue={DEBUG && "Fqrk7mIZa2bkvbS4HTaxzNJDkwYYtQ14"}
                     />
                 </div>
 
@@ -189,7 +186,6 @@ export default function App() {
                         placeholder="16자의 초기화 벡터 문자열을 입력해주세요."
                         minLength={16}
                         maxLength={16}
-                        defaultValue={DEBUG && "a1pAY58AEt4u9wML"}
                     />
                 </div>
 
